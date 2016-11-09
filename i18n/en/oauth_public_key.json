@@ -1,0 +1,25 @@
+{
+    "oAuthApp": {
+        "oauth_public_key" : {
+            "home": {
+                "title": "Oauth Public Keys",
+                "createLabel": "Create a new Oauth Public Key",
+                "createOrEditLabel": "Create or edit a Oauth Public Key",
+                "search": "Search for Oauth Public Key"
+            },
+            "created": "A new Oauth Public Key is created with identifier {{ param }}",
+            "updated": "A Oauth Public Key is updated with identifier {{ param }}",
+            "deleted": "A Oauth Public Key is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Oauth Public Key {{ id }}?"
+            },
+            "detail": {
+                "title": "Oauth Public Key"
+            },
+            "client_id": "Client Id",
+            "public_key": "Public Key",
+            "private_key": "Private Key",
+            "encryption_algorithm": "Encryption Algorithm"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "oAuthApp": {
+        "oauth_authorization_code" : {
+            "home": {
+                "title": "Oauth_authorization_codes",
+                "createLabel": "नया Oauth Authorization Code बनाएँ",
+                "createOrEditLabel": "Oauth Authorization Code बनाएँ या संपादित करें",
+                "search": "Oauth Authorization Code खोजें"
+            },
+            "created": "एक नया Oauth Authorization Code [identifier: {{ param }}] तैयार है",
+            "updated": "एक Oauth Authorization Code [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Oauth Authorization Code [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Oauth Authorization Code [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Oauth Authorization Code"
+            },
+            "authorization_code": "Authorization Code",
+            "client_id": "Client Id",
+            "user_id": "User Id",
+            "redirect_uri": "Redirect Uri",
+            "expires": "Expires",
+            "scope": "Scope",
+            "id_token": "Id Token"
+        }
+    }
+}

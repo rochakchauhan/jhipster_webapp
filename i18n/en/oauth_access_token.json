@@ -1,0 +1,26 @@
+{
+    "oAuthApp": {
+        "oauth_access_token" : {
+            "home": {
+                "title": "Oauth Access Tokens",
+                "createLabel": "Create a new Oauth Access Token",
+                "createOrEditLabel": "Create or edit a Oauth Access Token",
+                "search": "Search for Oauth Access Token"
+            },
+            "created": "A new Oauth Access Token is created with identifier {{ param }}",
+            "updated": "A Oauth Access Token is updated with identifier {{ param }}",
+            "deleted": "A Oauth Access Token is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Oauth Access Token {{ id }}?"
+            },
+            "detail": {
+                "title": "Oauth Access Token"
+            },
+            "access_token": "Access Token",
+            "client_id": "Client Id",
+            "user_id": "User Id",
+            "expires": "Expires",
+            "scope": "Scope"
+        }
+    }
+}

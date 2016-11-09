@@ -1,0 +1,62 @@
+<div>
+    <h2 translate="oAuthApp.oauth_public_key.home.title">Oauth Public Keys</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="oauth-public-key.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  translate="oAuthApp.oauth_public_key.home.createLabel">
+                        Create new Oauth Public Key
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="oAuthApp.oauth_public_key.client_id">Client Id</span></th>
+                    <th><span translate="oAuthApp.oauth_public_key.public_key">Public Key</span></th>
+                    <th><span translate="oAuthApp.oauth_public_key.private_key">Private Key</span></th>
+                    <th><span translate="oAuthApp.oauth_public_key.encryption_algorithm">Encryption Algorithm</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="oauth_public_key in vm.oauth_public_keys track by oauth_public_key.id">
+                    <td><a ui-sref="oauth-public-key-detail({id:oauth_public_key.id})">{{oauth_public_key.id}}</a></td>
+                    <td>{{oauth_public_key.client_id}}</td>
+                    <td>{{oauth_public_key.public_key}}</td>
+                    <td>{{oauth_public_key.private_key}}</td>
+                    <td>{{oauth_public_key.encryption_algorithm}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="oauth-public-key-detail({id:oauth_public_key.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="oauth-public-key.edit({id:oauth_public_key.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="oauth-public-key.delete({id:oauth_public_key.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

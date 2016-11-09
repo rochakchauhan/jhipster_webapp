@@ -1,0 +1,110 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myOauth_authorization_codeLabel" translate="oAuthApp.oauth_authorization_code.home.createOrEditLabel">Create or edit a Oauth Authorization Code</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.oauth_authorization_code.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.oauth_authorization_code.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="oAuthApp.oauth_authorization_code.authorization_code" for="field_authorization_code">Authorization Code</label>
+            <input type="text" class="form-control" name="authorization_code" id="field_authorization_code"
+                    ng-model="vm.oauth_authorization_code.authorization_code"
+                    required />
+            <div ng-show="editForm.authorization_code.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.authorization_code.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="oAuthApp.oauth_authorization_code.client_id" for="field_client_id">Client Id</label>
+            <input type="text" class="form-control" name="client_id" id="field_client_id"
+                    ng-model="vm.oauth_authorization_code.client_id"
+                    required />
+            <div ng-show="editForm.client_id.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.client_id.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="oAuthApp.oauth_authorization_code.user_id" for="field_user_id">User Id</label>
+            <input type="text" class="form-control" name="user_id" id="field_user_id"
+                    ng-model="vm.oauth_authorization_code.user_id"
+                    required />
+            <div ng-show="editForm.user_id.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.user_id.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="oAuthApp.oauth_authorization_code.redirect_uri" for="field_redirect_uri">Redirect Uri</label>
+            <input type="text" class="form-control" name="redirect_uri" id="field_redirect_uri"
+                    ng-model="vm.oauth_authorization_code.redirect_uri"
+                    required />
+            <div ng-show="editForm.redirect_uri.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.redirect_uri.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="oAuthApp.oauth_authorization_code.expires" for="field_expires">Expires</label>
+            <input type="text" class="form-control" name="expires" id="field_expires"
+                    ng-model="vm.oauth_authorization_code.expires"
+                    required />
+            <div ng-show="editForm.expires.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.expires.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="oAuthApp.oauth_authorization_code.scope" for="field_scope">Scope</label>
+            <input type="text" class="form-control" name="scope" id="field_scope"
+                    ng-model="vm.oauth_authorization_code.scope"
+                    required />
+            <div ng-show="editForm.scope.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.scope.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="oAuthApp.oauth_authorization_code.id_token" for="field_id_token">Id Token</label>
+            <input type="text" class="form-control" name="id_token" id="field_id_token"
+                    ng-model="vm.oauth_authorization_code.id_token"
+                    required />
+            <div ng-show="editForm.id_token.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.id_token.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

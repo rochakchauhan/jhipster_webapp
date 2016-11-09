@@ -1,0 +1,26 @@
+{
+    "oAuthApp": {
+        "oauth_refresh_token" : {
+            "home": {
+                "title": "Oauth_refresh_tokens",
+                "createLabel": "नया Oauth Refresh Token बनाएँ",
+                "createOrEditLabel": "Oauth Refresh Token बनाएँ या संपादित करें",
+                "search": "Oauth Refresh Token खोजें"
+            },
+            "created": "एक नया Oauth Refresh Token [identifier: {{ param }}] तैयार है",
+            "updated": "एक Oauth Refresh Token [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Oauth Refresh Token [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Oauth Refresh Token [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Oauth Refresh Token"
+            },
+            "refresh_token": "Refresh Token",
+            "client_id": "Client Id",
+            "user_id": "User Id",
+            "expires": "Expires",
+            "scope": "Scope"
+        }
+    }
+}

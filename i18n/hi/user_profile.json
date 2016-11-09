@@ -1,0 +1,24 @@
+{
+    "oAuthApp": {
+        "user_profile" : {
+            "home": {
+                "title": "User_profiles",
+                "createLabel": "नया User Profile बनाएँ",
+                "createOrEditLabel": "User Profile बनाएँ या संपादित करें",
+                "search": "User Profile खोजें"
+            },
+            "created": "एक नया User Profile [identifier: {{ param }}] तैयार है",
+            "updated": "एक User Profile [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "User Profile [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "User Profile [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "User Profile"
+            },
+            "aadhaar_number": "Aadhaar Number",
+            "mobile_number": "Mobile Number",
+            "user_id": "User Id"
+        }
+    }
+}

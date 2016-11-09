@@ -1,0 +1,23 @@
+{
+    "oAuthApp": {
+        "oauth_scope" : {
+            "home": {
+                "title": "Oauth Scopes",
+                "createLabel": "Create a new Oauth Scope",
+                "createOrEditLabel": "Create or edit a Oauth Scope",
+                "search": "Search for Oauth Scope"
+            },
+            "created": "A new Oauth Scope is created with identifier {{ param }}",
+            "updated": "A Oauth Scope is updated with identifier {{ param }}",
+            "deleted": "A Oauth Scope is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Oauth Scope {{ id }}?"
+            },
+            "detail": {
+                "title": "Oauth Scope"
+            },
+            "scope": "Scope",
+            "is_default": "Is Default"
+        }
+    }
+}

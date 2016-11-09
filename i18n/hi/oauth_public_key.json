@@ -1,0 +1,25 @@
+{
+    "oAuthApp": {
+        "oauth_public_key" : {
+            "home": {
+                "title": "Oauth_public_keys",
+                "createLabel": "नया Oauth Public Key बनाएँ",
+                "createOrEditLabel": "Oauth Public Key बनाएँ या संपादित करें",
+                "search": "Oauth Public Key खोजें"
+            },
+            "created": "एक नया Oauth Public Key [identifier: {{ param }}] तैयार है",
+            "updated": "एक Oauth Public Key [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Oauth Public Key [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Oauth Public Key [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Oauth Public Key"
+            },
+            "client_id": "Client Id",
+            "public_key": "Public Key",
+            "private_key": "Private Key",
+            "encryption_algorithm": "Encryption Algorithm"
+        }
+    }
+}

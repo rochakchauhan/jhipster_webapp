@@ -1,0 +1,64 @@
+<div>
+    <h2 translate="oAuthApp.oauth_refresh_token.home.title">Oauth Refresh Tokens</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="oauth-refresh-token.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  translate="oAuthApp.oauth_refresh_token.home.createLabel">
+                        Create new Oauth Refresh Token
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="oAuthApp.oauth_refresh_token.refresh_token">Refresh Token</span></th>
+                    <th><span translate="oAuthApp.oauth_refresh_token.client_id">Client Id</span></th>
+                    <th><span translate="oAuthApp.oauth_refresh_token.user_id">User Id</span></th>
+                    <th><span translate="oAuthApp.oauth_refresh_token.expires">Expires</span></th>
+                    <th><span translate="oAuthApp.oauth_refresh_token.scope">Scope</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="oauth_refresh_token in vm.oauth_refresh_tokens track by oauth_refresh_token.id">
+                    <td><a ui-sref="oauth-refresh-token-detail({id:oauth_refresh_token.id})">{{oauth_refresh_token.id}}</a></td>
+                    <td>{{oauth_refresh_token.refresh_token}}</td>
+                    <td>{{oauth_refresh_token.client_id}}</td>
+                    <td>{{oauth_refresh_token.user_id}}</td>
+                    <td>{{oauth_refresh_token.expires}}</td>
+                    <td>{{oauth_refresh_token.scope}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="oauth-refresh-token-detail({id:oauth_refresh_token.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="oauth-refresh-token.edit({id:oauth_refresh_token.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="oauth-refresh-token.delete({id:oauth_refresh_token.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

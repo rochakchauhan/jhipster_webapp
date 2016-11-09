@@ -1,0 +1,23 @@
+{
+    "oAuthApp": {
+        "oauth_scope" : {
+            "home": {
+                "title": "Oauth_scopes",
+                "createLabel": "नया Oauth Scope बनाएँ",
+                "createOrEditLabel": "Oauth Scope बनाएँ या संपादित करें",
+                "search": "Oauth Scope खोजें"
+            },
+            "created": "एक नया Oauth Scope [identifier: {{ param }}] तैयार है",
+            "updated": "एक Oauth Scope [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Oauth Scope [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Oauth Scope [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Oauth Scope"
+            },
+            "scope": "Scope",
+            "is_default": "Is Default"
+        }
+    }
+}

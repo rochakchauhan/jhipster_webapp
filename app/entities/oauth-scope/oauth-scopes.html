@@ -1,0 +1,58 @@
+<div>
+    <h2 translate="oAuthApp.oauth_scope.home.title">Oauth Scopes</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="oauth-scope.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  translate="oAuthApp.oauth_scope.home.createLabel">
+                        Create new Oauth Scope
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="oAuthApp.oauth_scope.scope">Scope</span></th>
+                    <th><span translate="oAuthApp.oauth_scope.is_default">Is Default</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="oauth_scope in vm.oauth_scopes track by oauth_scope.id">
+                    <td><a ui-sref="oauth-scope-detail({id:oauth_scope.id})">{{oauth_scope.id}}</a></td>
+                    <td>{{oauth_scope.scope}}</td>
+                    <td>{{oauth_scope.is_default}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="oauth-scope-detail({id:oauth_scope.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="oauth-scope.edit({id:oauth_scope.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="oauth-scope.delete({id:oauth_scope.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

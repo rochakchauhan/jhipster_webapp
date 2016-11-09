@@ -1,0 +1,24 @@
+{
+    "oAuthApp": {
+        "oauth_client" : {
+            "home": {
+                "title": "Oauth Clients",
+                "createLabel": "Create a new Oauth Client",
+                "createOrEditLabel": "Create or edit a Oauth Client",
+                "search": "Search for Oauth Client"
+            },
+            "created": "A new Oauth Client is created with identifier {{ param }}",
+            "updated": "A Oauth Client is updated with identifier {{ param }}",
+            "deleted": "A Oauth Client is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Oauth Client {{ id }}?"
+            },
+            "detail": {
+                "title": "Oauth Client"
+            },
+            "client_id": "Client Id",
+            "client_secret": "Client Secret",
+            "redirect_uri": "Redirect Uri"
+        }
+    }
+}

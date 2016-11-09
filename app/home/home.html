@@ -1,0 +1,38 @@
+<div ng-cloak>
+    <div class="row">
+        <div class="col-md-4">
+            <span class="hipster img-responsive img-rounded"></span>
+        </div>
+        <div class="col-md-8">
+            <h1 translate="home.title">Welcome to oAuth  Hipster!</h1>
+
+            <div ng-switch="vm.isAuthenticated()">
+                <div class="alert alert-success" ng-switch-when="true" translate="home.logged.message" translate-values="{username: '{{vm.account.login}}'}">
+                    You are logged in as user "{{vm.account.login}}".
+                </div>
+
+                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.authenticated" translate-compile>
+                    If you want to <a class="alert-link" href="" ng-click="vm.login()">sign in</a>, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").
+                </div>
+
+                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.register" translate-compile>
+                    You don't have an account yet? <a class="alert-link" ui-sref="register">Register a new account</a>
+                </div>
+            </div>
+			
+			<h4>Version 1</h4>			
+            <ul>
+            	<li><a href="/swagger-ui/index.html#!/user-jwt-controller/authorizeUsingPOST">Login API:</a> http://127.0.0.1:8383/api/authenticate</li>    
+            	<li><a href="/swagger-ui/index.html#!/account-resource/registerAccountUsingPOST">Register API:</a> http://127.0.0.1:8383/api/register</li>
+            	<li><a href="/swagger-ui/index.html#!/account-resource/getAccountUsingGET">Check Token:</a> http://127.0.0.1:8383/api/account</li>
+            </ul>
+            
+			<h4>Version 2 (Under development)</h4>			
+            <ul>
+            	<li>Login using Form post and callback URL.</li>    
+            	<li>Login and Registration without APIs</li>
+            </ul>
+          
+        </div>
+    </div>
+</div>

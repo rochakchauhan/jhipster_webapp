@@ -1,0 +1,24 @@
+{
+    "oAuthApp": {
+        "oauth_client" : {
+            "home": {
+                "title": "Oauth_clients",
+                "createLabel": "नया Oauth Client बनाएँ",
+                "createOrEditLabel": "Oauth Client बनाएँ या संपादित करें",
+                "search": "Oauth Client खोजें"
+            },
+            "created": "एक नया Oauth Client [identifier: {{ param }}] तैयार है",
+            "updated": "एक Oauth Client [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Oauth Client [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Oauth Client [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Oauth Client"
+            },
+            "client_id": "Client Id",
+            "client_secret": "Client Secret",
+            "redirect_uri": "Redirect Uri"
+        }
+    }
+}

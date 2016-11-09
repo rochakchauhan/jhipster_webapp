@@ -1,0 +1,42 @@
+
+<div>
+    <h2><span translate="oAuthApp.oauth_authorization_code.detail.title">Oauth Authorization Code</span> {{vm.oauth_authorization_code.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="oAuthApp.oauth_authorization_code.authorization_code">Authorization Code</span></dt>
+        <dd>
+            <span>{{vm.oauth_authorization_code.authorization_code}}</span>
+        </dd>
+        <dt><span translate="oAuthApp.oauth_authorization_code.client_id">Client Id</span></dt>
+        <dd>
+            <span>{{vm.oauth_authorization_code.client_id}}</span>
+        </dd>
+        <dt><span translate="oAuthApp.oauth_authorization_code.user_id">User Id</span></dt>
+        <dd>
+            <span>{{vm.oauth_authorization_code.user_id}}</span>
+        </dd>
+        <dt><span translate="oAuthApp.oauth_authorization_code.redirect_uri">Redirect Uri</span></dt>
+        <dd>
+            <span>{{vm.oauth_authorization_code.redirect_uri}}</span>
+        </dd>
+        <dt><span translate="oAuthApp.oauth_authorization_code.expires">Expires</span></dt>
+        <dd>
+            <span>{{vm.oauth_authorization_code.expires}}</span>
+        </dd>
+        <dt><span translate="oAuthApp.oauth_authorization_code.scope">Scope</span></dt>
+        <dd>
+            <span>{{vm.oauth_authorization_code.scope}}</span>
+        </dd>
+        <dt><span translate="oAuthApp.oauth_authorization_code.id_token">Id Token</span></dt>
+        <dd>
+            <span>{{vm.oauth_authorization_code.id_token}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

@@ -1,0 +1,26 @@
+{
+    "oAuthApp": {
+        "oauth_access_token" : {
+            "home": {
+                "title": "Oauth_access_tokens",
+                "createLabel": "नया Oauth Access Token बनाएँ",
+                "createOrEditLabel": "Oauth Access Token बनाएँ या संपादित करें",
+                "search": "Oauth Access Token खोजें"
+            },
+            "created": "एक नया Oauth Access Token [identifier: {{ param }}] तैयार है",
+            "updated": "एक Oauth Access Token [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Oauth Access Token [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Oauth Access Token [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Oauth Access Token"
+            },
+            "access_token": "Access Token",
+            "client_id": "Client Id",
+            "user_id": "User Id",
+            "expires": "Expires",
+            "scope": "Scope"
+        }
+    }
+}

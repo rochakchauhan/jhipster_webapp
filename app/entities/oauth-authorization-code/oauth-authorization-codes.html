@@ -1,0 +1,68 @@
+<div>
+    <h2 translate="oAuthApp.oauth_authorization_code.home.title">Oauth Authorization Codes</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="oauth-authorization-code.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  translate="oAuthApp.oauth_authorization_code.home.createLabel">
+                        Create new Oauth Authorization Code
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="oAuthApp.oauth_authorization_code.authorization_code">Authorization Code</span></th>
+                    <th><span translate="oAuthApp.oauth_authorization_code.client_id">Client Id</span></th>
+                    <th><span translate="oAuthApp.oauth_authorization_code.user_id">User Id</span></th>
+                    <th><span translate="oAuthApp.oauth_authorization_code.redirect_uri">Redirect Uri</span></th>
+                    <th><span translate="oAuthApp.oauth_authorization_code.expires">Expires</span></th>
+                    <th><span translate="oAuthApp.oauth_authorization_code.scope">Scope</span></th>
+                    <th><span translate="oAuthApp.oauth_authorization_code.id_token">Id Token</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="oauth_authorization_code in vm.oauth_authorization_codes track by oauth_authorization_code.id">
+                    <td><a ui-sref="oauth-authorization-code-detail({id:oauth_authorization_code.id})">{{oauth_authorization_code.id}}</a></td>
+                    <td>{{oauth_authorization_code.authorization_code}}</td>
+                    <td>{{oauth_authorization_code.client_id}}</td>
+                    <td>{{oauth_authorization_code.user_id}}</td>
+                    <td>{{oauth_authorization_code.redirect_uri}}</td>
+                    <td>{{oauth_authorization_code.expires}}</td>
+                    <td>{{oauth_authorization_code.scope}}</td>
+                    <td>{{oauth_authorization_code.id_token}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="oauth-authorization-code-detail({id:oauth_authorization_code.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="oauth-authorization-code.edit({id:oauth_authorization_code.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="oauth-authorization-code.delete({id:oauth_authorization_code.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

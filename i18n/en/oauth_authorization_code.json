@@ -1,0 +1,28 @@
+{
+    "oAuthApp": {
+        "oauth_authorization_code" : {
+            "home": {
+                "title": "Oauth Authorization Codes",
+                "createLabel": "Create a new Oauth Authorization Code",
+                "createOrEditLabel": "Create or edit a Oauth Authorization Code",
+                "search": "Search for Oauth Authorization Code"
+            },
+            "created": "A new Oauth Authorization Code is created with identifier {{ param }}",
+            "updated": "A Oauth Authorization Code is updated with identifier {{ param }}",
+            "deleted": "A Oauth Authorization Code is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Oauth Authorization Code {{ id }}?"
+            },
+            "detail": {
+                "title": "Oauth Authorization Code"
+            },
+            "authorization_code": "Authorization Code",
+            "client_id": "Client Id",
+            "user_id": "User Id",
+            "redirect_uri": "Redirect Uri",
+            "expires": "Expires",
+            "scope": "Scope",
+            "id_token": "Id Token"
+        }
+    }
+}

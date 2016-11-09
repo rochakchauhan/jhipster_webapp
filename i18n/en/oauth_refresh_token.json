@@ -1,0 +1,26 @@
+{
+    "oAuthApp": {
+        "oauth_refresh_token" : {
+            "home": {
+                "title": "Oauth Refresh Tokens",
+                "createLabel": "Create a new Oauth Refresh Token",
+                "createOrEditLabel": "Create or edit a Oauth Refresh Token",
+                "search": "Search for Oauth Refresh Token"
+            },
+            "created": "A new Oauth Refresh Token is created with identifier {{ param }}",
+            "updated": "A Oauth Refresh Token is updated with identifier {{ param }}",
+            "deleted": "A Oauth Refresh Token is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Oauth Refresh Token {{ id }}?"
+            },
+            "detail": {
+                "title": "Oauth Refresh Token"
+            },
+            "refresh_token": "Refresh Token",
+            "client_id": "Client Id",
+            "user_id": "User Id",
+            "expires": "Expires",
+            "scope": "Scope"
+        }
+    }
+}
