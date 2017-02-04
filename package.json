@@ -62,6 +62,7 @@
   },
   "scripts": {
     "test": "gulp test",
+    "run": "npm install && bower install",
     "start": "gulp serve"
   }
 }
